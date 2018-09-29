@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_margin="8dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:layout_below="@id/top"
+        android:id="@+id/wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_alignTop="@id/gambar"
+        tools:text="captain america"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/deskripsi"
+        tools:text="The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker, who has seized control of Gotham's underworld."
+        android:maxLines="3"
+        android:layout_below="@id/judul"
+        android:layout_alignStart="@id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tanggal_rilis"
+        tools:text="1989-06-23"
+        android:layout_alignStart="@id/deskripsi"
+        android:layout_below="@id/deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/wrap_content"
+        android:layout_marginBottom="2dp"
+        android:background="@color/colorPrimaryDark"/>
+
+</RelativeLayout>
